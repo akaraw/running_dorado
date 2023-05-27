@@ -1,3 +1,12 @@
+#!/bin/bash
+
+#SBATCH --job-name doradp_gpu
+#SBATCH --ntasks-per-node 1
+#SBATCH --cpus-per-task=4
+#SBATCH --mem 16gb
+#SBATCH --time 24:00:00
+#SBATCH --gres=gpu:3
+
 POD5 - https://github.com/nanoporetech/pod5-file-format
 pod5 convert fast5 --help
 
