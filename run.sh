@@ -11,7 +11,8 @@ POD5 - https://github.com/nanoporetech/pod5-file-format
 pod5 convert fast5 --help
 
 
-pod5 convert fast5 QC_gDNA/SNI_SQK_LSK114_03032023/SNI_7_1_230223/20230303_1506_MN24731_ANQ118_9da6efca/fast5 --output QC_gDNA/SNI_SQK_LSK114_03032023/pod5
+#pod5 convert fast5 QC_gDNA/SNI_SQK_LSK114_03032023/SNI_7_1_230223/20230303_1506_MN24731_ANQ118_9da6efca/fast5 --output QC_gDNA/SNI_SQK_LSK114_03032023/pod5
+pod5-convert-from-fast5 -p 12 fast5 pod5
 export PATH=~/basecalling/dorado-0.1.1+eb48766-Linux/bin/:/scratch1/kar131/mambaforge/bin:$PATH
 
 #cuda:${CUDA_VISIBLE_DEVICES}
